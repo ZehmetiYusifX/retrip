@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="az" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retrip Travel | Premium Səyahət və Viza Xidmətləri</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: '#0A2540',
+            brandSoft: '#13395e',
+            accent: '#FF6A3D',
+            ink: '#08111f',
+            mist: '#f5f7fb',
+            line: '#dbe3ee'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Manrope', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(8, 17, 31, 0.08)',
+            premium: '0 20px 60px rgba(8, 17, 31, 0.18)',
+            glow: '0 10px 40px rgba(255, 106, 61, 0.22)'
+          },
+          backgroundImage: {
+            hero: "linear-gradient(135deg, rgba(8,17,31,.78), rgba(10,37,64,.68), rgba(19,57,94,.48)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80')",
+            cta: "linear-gradient(135deg, rgba(10,37,64,.95), rgba(19,57,94,.88))"
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { color-scheme: dark; }
+    html { scroll-behavior: smooth; }
+    .glass {
+      backdrop-filter: blur(18px);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+    }
+    .card-border {
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+  </style>
+</head>
+<body class="bg-ink text-white font-sans antialiased">
+  <div class="min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top,_rgba(255,106,61,0.08),_transparent_28%),linear-gradient(180deg,#07111d_0%,#0a1727_45%,#08111f_100%)]">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#08111f]/75 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#" class="flex items-center gap-3">
+          <img src="retriptravel.jpeg" alt="Retrip Travel logo" class="h-12 w-auto rounded-xl bg-white p-1 shadow-soft" />
+          <div>
+            <div class="font-display text-lg font-800 tracking-[0.22em] text-white">RETRIP</div>
+            <div class="text-xs uppercase tracking-[0.35em] text-white/55">Premium Travel</div>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-8 text-sm font-medium text-white/78 md:flex">
+          <a href="#turlar" class="transition hover:text-white">Turlar</a>
+          <a href="#viza" class="transition hover:text-white">Viza Dəstəyi</a>
+          <a href="#ustunlukler" class="transition hover:text-white">Üstünlüklərimiz</a>
+          <a href="#reyler" class="transition hover:text-white">Rəylər</a>
+          <a href="#elaqe" class="transition hover:text-white">Əlaqə</a>
+        </nav>
+
+        <a href="#elaqe" class="hidden rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand shadow-soft transition hover:-translate-y-0.5 hover:shadow-premium md:inline-flex">Müraciət et</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative isolate overflow-hidden">
+        <div class="absolute inset-0 bg-hero bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,106,61,0.28),_transparent_24%)]"></div>
+        <div class="relative mx-auto grid min-h-[92vh] max-w-7xl items-center gap-16 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-20">
+          <div>
+            <div class="inline-flex items-center gap-2 rounded-full border border-white/14 bg-white/6 px-4 py-2 text-sm text-white/80 shadow-soft">
+              <span class="material-symbols-outlined text-base text-accent">workspace_premium</span>
+              Bakıdan dünyaya premium səyahət təcrübəsi
+            </div>
+            <h1 class="mt-7 max-w-4xl font-display text-5xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+              Dünyanı <span class="text-accent">Retrip</span> ilə daha zövqlü kəşf et.
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-white/72 sm:text-xl">
+              Fərdi və ailəvi turlar, premium otel seçimləri, rahat viza dəstəyi və 24/7 müşayiət. Səyahətin hər detalını sizin üçün dəyərə çeviririk.
+            </p>
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+              <a href="#turlar" class="inline-flex items-center justify-center rounded-full bg-accent px-7 py-4 text-base font-semibold text-white shadow-glow transition hover:-translate-y-1">Seçilmiş turlara bax</a>
+              <a href="#viza" class="glass inline-flex items-center justify-center rounded-full px-7 py-4 text-base font-semibold text-white transition hover:bg-white/15">Viza məsləhəti al</a>
+            </div>
+            <div class="mt-12 grid max-w-2xl grid-cols-1 gap-4 sm:grid-cols-3">
+              <div class="glass rounded-2xl p-5">
+                <div class="text-3xl font-display font-extrabold">15+</div>
+                <div class="mt-1 text-sm text-white/65">İl təcrübə</div>
+              </div>
+              <div class="glass rounded-2xl p-5">
+                <div class="text-3xl font-display font-extrabold">98%</div>
+                <div class="mt-1 text-sm text-white/65">Məmnun müştəri</div>
+              </div>
+              <div class="glass rounded-2xl p-5">
+                <div class="text-3xl font-display font-extrabold">24/7</div>
+                <div class="mt-1 text-sm text-white/65">Dəstək xidməti</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative lg:justify-self-end">
+            <div class="rounded-[2rem] border border-white/10 bg-white/8 p-4 shadow-premium backdrop-blur-md">
+              <div class="overflow-hidden rounded-[1.7rem] border border-white/10 bg-white/6">
+                <div class="flex items-center justify-between border-b border-white/10 px-6 py-4">
+                  <div>
+                    <div class="text-sm font-semibold text-white">Premium planlama</div>
+                    <div class="mt-1 text-xs text-white/55">Fərdiləşdirilmiş səyahət təklifi</div>
+                  </div>
+                  <span class="rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold text-accent">VIP xidmət</span>
+                </div>
+                <div class="space-y-5 p-6">
+                  <div class="rounded-2xl bg-white/[0.06] p-5">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <div class="text-sm text-white/55">İstiqamət</div>
+                        <div class="mt-1 text-lg font-semibold">Dubai Luxury Escape</div>
+                      </div>
+                      <span class="material-symbols-outlined text-accent">south_america</span>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-2xl bg-white/[0.06] p-5">
+                      <div class="text-sm text-white/55">Müddət</div>
+                      <div class="mt-2 text-xl font-bold">5 gecə / 6 gün</div>
+                    </div>
+                    <div class="rounded-2xl bg-white/[0.06] p-5">
+                      <div class="text-sm text-white/55">Başlanğıc</div>
+                      <div class="mt-2 text-xl font-bold">899 AZN</div>
+                    </div>
+                  </div>
+                  <div class="rounded-2xl bg-gradient-to-r from-white/[0.08] to-white/[0.03] p-5">
+                    <div class="flex items-start gap-3">
+                      <span class="material-symbols-outlined text-accent">verified</span>
+                      <p class="text-sm leading-7 text-white/72">Otellərin seçimi, transfer, tur proqramı və viza sənədləşməsi bir komanda tərəfindən idarə olunur.</p>
+                    </div>
+                  </div>
+                  <a href="#elaqe" class="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand transition hover:-translate-y-0.5">Təklif al</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -left-6 -top-8 hidden rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white/80 shadow-soft backdrop-blur-md lg:block">
+              <div class="font-semibold">Schengen • BƏƏ • ABŞ • Böyük Britaniya</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="turlar" class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+          <div>
+            <span class="text-sm font-semibold uppercase tracking-[0.35em] text-accent/90">Seçilmiş istiqamətlər</span>
+            <h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Premium hiss yaradan turlar</h2>
+            <p class="mt-4 max-w-2xl text-base leading-7 text-white/65">Azərbaycan bazarına uyğun seçilmiş paketlər: güclü xidmət, rahat logistika və yüksək səviyyəli qalma təcrübəsi.</p>
+          </div>
+          <a href="#elaqe" class="inline-flex items-center gap-2 text-sm font-semibold text-white/80 transition hover:text-white">Fərdi marşrut hazırla <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+        </div>
+
+        <div class="mt-14 grid gap-7 lg:grid-cols-3">
+          <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] shadow-soft transition duration-300 hover:-translate-y-2 hover:shadow-premium">
+            <div class="h-72 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80" alt="Dubai luxury skyline" class="h-full w-full object-cover transition duration-700 group-hover:scale-110">
+            </div>
+            <div class="p-7">
+              <div class="flex items-center justify-between">
+                <h3 class="text-2xl font-display font-bold">Dubai Premium</h3>
+                <span class="rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold text-accent">Trend</span>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-4 text-sm text-white/60">
+                <span>5 gecə / 6 gün</span>
+                <span>•</span>
+                <span>899 AZN-dən</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-white/68">Dəniz kənarı otellər, desert safari, alış-veriş və şəhərin premium ritmini birləşdirən rahat paket.</p>
+              <a href="#elaqe" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white">Ətraflı məlumat <span class="material-symbols-outlined text-base">north_east</span></a>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] shadow-soft transition duration-300 hover:-translate-y-2 hover:shadow-premium">
+            <div class="h-72 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=80" alt="Europe city" class="h-full w-full object-cover transition duration-700 group-hover:scale-110">
+            </div>
+            <div class="p-7">
+              <div class="flex items-center justify-between">
+                <h3 class="text-2xl font-display font-bold">Avropa Klassikası</h3>
+                <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/70">Schengen</span>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-4 text-sm text-white/60">
+                <span>7 gecə / 8 gün</span>
+                <span>•</span>
+                <span>1490 AZN-dən</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-white/68">Paris, Roma və Praqa istiqamətlərində premium qalma, komfort transfer və bələdçi dəstəyi ilə unudulmaz marşrut.</p>
+              <a href="#elaqe" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white">Ətraflı məlumat <span class="material-symbols-outlined text-base">north_east</span></a>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] shadow-soft transition duration-300 hover:-translate-y-2 hover:shadow-premium">
+            <div class="h-72 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1200&q=80" alt="Maldives resort" class="h-full w-full object-cover transition duration-700 group-hover:scale-110">
+            </div>
+            <div class="p-7">
+              <div class="flex items-center justify-between">
+                <h3 class="text-2xl font-display font-bold">Maldiv Adaları</h3>
+                <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/70">Honeymoon</span>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-4 text-sm text-white/60">
+                <span>4 gecə / 5 gün</span>
+                <span>•</span>
+                <span>2390 AZN-dən</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-white/68">Bal ayı və xüsusi günlər üçün seçilmiş ada resortları, sürətli rezervasiya və tam müşayiət xidməti.</p>
+              <a href="#elaqe" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white">Ətraflı məlumat <span class="material-symbols-outlined text-base">north_east</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="viza" class="border-y border-white/10 bg-white/[0.03]">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-24 sm:px-6 lg:grid-cols-[1fr_1fr] lg:px-8">
+          <div>
+            <span class="text-sm font-semibold uppercase tracking-[0.35em] text-accent/90">Viza dəstəyi</span>
+            <h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Problemsiz sənədləşmə, aydın proses</h2>
+            <p class="mt-5 max-w-xl text-base leading-8 text-white/68">Schengen, ABŞ, Böyük Britaniya, BƏƏ və digər istiqamətlər üçün sənədlərin hazırlanması, yoxlanılması və müsahibə öncəsi peşəkar dəstək təqdim edirik.</p>
+            <div class="mt-10 grid gap-5">
+              <div class="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+                <div class="flex gap-4">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/15 text-accent"><span class="material-symbols-outlined">fact_check</span></div>
+                  <div>
+                    <h3 class="text-lg font-semibold">Sənədlərin tam yoxlanılması</h3>
+                    <p class="mt-2 text-sm leading-7 text-white/64">Rədd riskini azaltmaq üçün sənəd paketi detallı şəkildə yoxlanılır və optimallaşdırılır.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+                <div class="flex gap-4">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/15 text-accent"><span class="material-symbols-outlined">record_voice_over</span></div>
+                  <div>
+                    <h3 class="text-lg font-semibold">Məsləhət və müsahibə hazırlığı</h3>
+                    <p class="mt-2 text-sm leading-7 text-white/64">Müraciət tipinizə uyğun düzgün təqdimat və sual-cavab hazırlığı aparılır.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+                <div class="flex gap-4">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/15 text-accent"><span class="material-symbols-outlined">diamond</span></div>
+                  <div>
+                    <h3 class="text-lg font-semibold">Premium müşayiət</h3>
+                    <p class="mt-2 text-sm leading-7 text-white/64">Ərizədən təslimə qədər vahid menecer tərəfindən sürətli və şəffaf nəzarət təmin edilir.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.03] p-8 shadow-premium">
+            <div class="flex items-center justify-between border-b border-white/10 pb-5">
+              <div>
+                <div class="text-xl font-display font-bold">Sürətli müraciət forması</div>
+                <div class="mt-1 text-sm text-white/55">Məsləhət üçün ilkin məlumat buraxın</div>
+              </div>
+              <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/70">15 dəq cavab</span>
+            </div>
+            <form class="mt-7 space-y-4">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <input type="text" placeholder="Ad və soyad" class="rounded-2xl border-white/10 bg-white/[0.05] px-4 py-4 text-white placeholder:text-white/35 focus:border-accent focus:ring-accent" />
+                <input type="tel" placeholder="Telefon nömrəsi" class="rounded-2xl border-white/10 bg-white/[0.05] px-4 py-4 text-white placeholder:text-white/35 focus:border-accent focus:ring-accent" />
+              </div>
+              <input type="text" placeholder="Maraqlandığınız istiqamət və ya viza növü" class="w-full rounded-2xl border-white/10 bg-white/[0.05] px-4 py-4 text-white placeholder:text-white/35 focus:border-accent focus:ring-accent" />
+              <textarea rows="5" placeholder="Qısa qeyd" class="w-full rounded-2xl border-white/10 bg-white/[0.05] px-4 py-4 text-white placeholder:text-white/35 focus:border-accent focus:ring-accent"></textarea>
+              <button type="button" class="inline-flex w-full items-center justify-center rounded-full bg-accent px-6 py-4 text-base font-semibold text-white shadow-glow transition hover:-translate-y-1">Məsləhət sifariş et</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="ustunlukler" class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <span class="text-sm font-semibold uppercase tracking-[0.35em] text-accent/90">Niyə biz?</span>
+          <h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Premium görünüşdən daha çoxu</h2>
+          <p class="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/65">Retrip yalnız bilet və otel satmır — güvən, rahatlıq və yüksək servis standartı təqdim edir.</p>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div class="rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 shadow-soft">
+            <span class="material-symbols-outlined text-4xl text-accent">military_tech</span>
+            <h3 class="mt-5 text-xl font-display font-bold">Brend səviyyəli xidmət</h3>
+            <p class="mt-3 text-sm leading-7 text-white/64">İlk müraciətdən son dönüşə qədər eyni keyfiyyətdə premium müştəri təcrübəsi.</p>
+          </div>
+          <div class="rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 shadow-soft">
+            <span class="material-symbols-outlined text-4xl text-accent">travel_luggage_and_bags</span>
+            <h3 class="mt-5 text-xl font-display font-bold">Fərdi paketlər</h3>
+            <p class="mt-3 text-sm leading-7 text-white/64">Büdcə, məqsəd və zövqə uyğun sıfırdan hazırlanmış marşrutlar və təkliflər.</p>
+          </div>
+          <div class="rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 shadow-soft">
+            <span class="material-symbols-outlined text-4xl text-accent">headset_mic</span>
+            <h3 class="mt-5 text-xl font-display font-bold">24/7 operativ dəstək</h3>
+            <p class="mt-3 text-sm leading-7 text-white/64">Səyahət zamanı dəyişiklik, təxirə düşmə və digər hallarda sürətli dəstək komandası.</p>
+          </div>
+          <div class="rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 shadow-soft">
+            <span class="material-symbols-outlined text-4xl text-accent">visibility</span>
+            <h3 class="mt-5 text-xl font-display font-bold">Şəffaf qiymətləndirmə</h3>
+            <p class="mt-3 text-sm leading-7 text-white/64">Xidmət məbləği, paket detalı və mərhələlər əvvəldən aydın şəkildə təqdim olunur.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="reyler" class="bg-white/[0.03] border-y border-white/10">
+        <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+          <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-[0.35em] text-accent/90">Müştəri rəyləri</span>
+              <h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Etibar qazanan təcrübələr</h2>
+            </div>
+            <div class="text-sm text-white/55">Google rəyləri • Instagram müraciətləri • Təkrar müştərilər</div>
+          </div>
+
+          <div class="mt-14 grid gap-6 lg:grid-cols-3">
+            <blockquote class="rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 shadow-soft">
+              <div class="flex items-center gap-1 text-accent">
+                <span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+              </div>
+              <p class="mt-6 text-base leading-8 text-white/72">“Avropa turumuz çox rahat keçdi. Otel seçimi, transfer və sənədlər tam peşəkar idarə olunmuşdu. Brend səviyyəsində xidmət aldıq.”</p>
+              <footer class="mt-6 text-sm text-white/55">— Nigar H., ailəvi səyahət</footer>
+            </blockquote>
+            <blockquote class="rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 shadow-soft">
+              <div class="flex items-center gap-1 text-accent">
+                <span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+              </div>
+              <p class="mt-6 text-base leading-8 text-white/72">“ABŞ vizası üçün çox səliqəli hazırlıq gördülər. Hansı sənədi necə təqdim etməli olduğumu aydın izah etdilər.”</p>
+              <footer class="mt-6 text-sm text-white/55">— Kamran A., tələbə</footer>
+            </blockquote>
+            <blockquote class="rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 shadow-soft">
+              <div class="flex items-center gap-1 text-accent">
+                <span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+              </div>
+              <p class="mt-6 text-base leading-8 text-white/72">“Maldiv turu üçün təklif etdikləri hotel və proqram tam gözlədiyimiz premium səviyyədə idi. Təkrar işləyəcəyik.”</p>
+              <footer class="mt-6 text-sm text-white/55">— Aysel & Murad, bal ayı paketi</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="elaqe" class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div class="overflow-hidden rounded-[2.5rem] border border-white/10 bg-cta shadow-premium">
+          <div class="grid gap-10 px-6 py-12 sm:px-10 lg:grid-cols-[1fr_0.8fr] lg:px-14 lg:py-16">
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-[0.35em] text-accent/90">Əlaqə</span>
+              <h2 class="mt-4 max-w-2xl font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Növbəti premium səyahətiniz üçün indi müraciət edin</h2>
+              <p class="mt-5 max-w-xl text-base leading-8 text-white/72">WhatsApp, zəng və ya sosial media üzərindən bizə yazın. Komandamız sizə ən uyğun tur və ya viza həllini təklif etsin.</p>
+              <div class="mt-8 grid gap-4 text-sm text-white/80 sm:grid-cols-2">
+                <div class="rounded-2xl bg-white/10 p-5">📍 Bakı, Nizami küçəsi 24</div>
+                <div class="rounded-2xl bg-white/10 p-5">📞 +994 50 000 00 00</div>
+                <div class="rounded-2xl bg-white/10 p-5">✉️ info@retrip.az</div>
+                <div class="rounded-2xl bg-white/10 p-5">🕘 Hər gün 10:00 – 20:00</div>
+              </div>
+            </div>
+            <div class="rounded-[2rem] border border-white/10 bg-white/10 p-6 backdrop-blur-md">
+              <div class="flex items-center gap-3">
+                <img src="retriptravel.jpeg" alt="Retrip Travel logo" class="h-14 w-auto rounded-xl bg-white p-1" />
+                <div>
+                  <div class="font-display text-2xl font-bold">Retrip Travel</div>
+                  <div class="text-sm text-white/55">Premium travel & visa services</div>
+                </div>
+              </div>
+              <div class="mt-8 space-y-4 text-sm text-white/70">
+                <a href="#" class="flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 transition hover:bg-white/15"><span>WhatsApp ilə yaz</span><span class="material-symbols-outlined">north_east</span></a>
+                <a href="#" class="flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 transition hover:bg-white/15"><span>Instagram səhifəsi</span><span class="material-symbols-outlined">north_east</span></a>
+                <a href="#" class="flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 transition hover:bg-white/15"><span>Ofisə yaxınlaş</span><span class="material-symbols-outlined">north_east</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-8 text-sm text-white/45 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <div class="flex items-center gap-3">
+          <img src="retriptravel.jpeg" alt="Retrip Travel logo" class="h-10 w-auto rounded-lg bg-white p-1" />
+          <span>© 2026 Retrip Travel. Bütün hüquqlar qorunur.</span>
+        </div>
+        <div class="flex gap-6">
+          <a href="#" class="transition hover:text-white">Məxfilik siyasəti</a>
+          <a href="#" class="transition hover:text-white">Xidmət şərtləri</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
